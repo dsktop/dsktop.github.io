@@ -1,0 +1,89 @@
+<?php
+error_reporting(0);
+require 'cnx.php';
+session_start();
+
+    $msgError = $_SESSION['msgError'];
+    $visible = 'visually-hidden';
+
+    if($msgError) {
+        $visible = '';
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="barra">
+        <img class="imagen" src="img/login.jpg">
+        <p class="titulo">Iniciar  Sesión</p>
+    </div>
+    <div class="boxblue">
+        <div class="contenedor">
+        <form class="formulario" action="validacion.php" method="POST">
+            <div class="campo">
+                <label for="correo" class="label">Email</label>
+                <div id="fondo-input" style="display: inline-flex;">
+                    <img style="width:2.5rem; height: 1.8rem; margin-top: 0.6rem; margin-left: 0.5rem;" src="img\email.jpg" alt="">
+                    <input class="input input-img" type="email" placeholder="email@servicio.com" name="email_user" >
+                </div>
+            </div>
+
+            <div class="campo" >
+                <label class="label">Contraseña</label>
+                <div id="fondo-input" style="display: inline-flex;">
+                    <img style="width:2rem; height: 1.9rem; margin-top: 0.6rem; margin-left: 0.8rem;" src="img\candado.jpeg" alt="">
+                    <input class="input" id="input-email" type="password" name="pass_user" placeholder="">
+                    <img id="ojo" src="img\ojo.jpeg" alt="">
+                    <img id="ojorayado" src="img\ojoraya.png" alt="">
+                </div>
+                
+            </div>
+
+            <div class="campo-recuerda" style="visibility: hidden;">
+                <label class="label-recuerda" >
+                    <input disabled class="checkbox-recuerda" id="input-contra" type="checkbox" />Recuerdame
+                </label> <a class="clave-olvidada" href="#">No olvides tu Contraseña</a>
+            </div>
+            
+            <div class="buttons">
+            <input type="hidden" name="enviado" value="1">
+            <!--<a style="display: inline-flex;" class="buttong" href=""><img style="width:2.5rem; height: 1.6rem; margin-top: -0.1rem; margin-right: 1rem;" src="img\g.jpeg" alt="">Iniciar Con Google</a>-->
+            <button type="submit" name="submit" class="btn btn-primary btn-lg btnIniciar">Iniciar Sesión</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    let ojo = document.getElementById('ojo');
+    let ojor = document.getElementById('ojorayado');
+
+    ojo.addEventListener('click', function(){
+        ojo.style.visibility = "hidden";
+        ojorayado.style.visibility = "visible";
+        document.querySelector("#input-email").type = "text"
+    })
+    ojorayado.addEventListener('click', function(){
+        ojorayado.style.visibility = "hidden";
+        ojo.style.visibility = "visible";
+        document.querySelector("#input-email").type = "password"
+    })
+
+
+</script>

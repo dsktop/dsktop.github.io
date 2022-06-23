@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+}
+a {
+    padding:0;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family:'Plus Jakarta Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.boxblue {
+    background-color: #183153;
+    height: 100vh;
+    width: 50%;
+    margin-left: auto;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: #9c9c9c;
+    font-weight: bold;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+}
+
+.imagen {
+    width: 50%;
+    float: left;
+    margin-top: 8rem;
+    
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    margin-bottom: 3rem;
+}
+
+#ojorayado{
+    position: fixed; 
+    width: 2.25rem;
+    margin-top: 0.55rem; 
+    margin-left: 27.8rem; 
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+#ojo{
+    width:2.9rem; 
+    height: 1.9rem; 
+    margin-top: 0.6rem; 
+    margin-left: 0.8rem; 
+    border-radius: 50%;
+}
+
+.label {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+#fondo-input{
+    background: white;
+    border-radius: 50px;
+    width: 30.5rem;
+}
+
+.input{
+	flex: 1;
+	border: 1px solid black;
+    border: 0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    height: 3rem ;
+    width: 23rem;
+    margin-left: 0rem;
+    font-size: 20px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.label-recuerda {
+    text-align: left;
+    color: #666666;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.campo-recuerda {
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.checkbox-recuerda {
+    margin-right: 0.5rem;
+}
+.clave-olvidada {
+    margin-left: 12rem;
+    color: #183153;
+    font-size: 0.9rem;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    cursor: default;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btnIniciar {
+    margin: 1rem;
+    border: 0;
+    border-radius: 0.3rem;
+    width: 10rem;
+    padding: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    background-color: #13aec6;
+    color: white;
+    display: inline-block;
+}
+
+.btnIniciar:hover {
+    cursor: pointer;
+}
+
+.buttong {
+    background-color: white;
+    color: black;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    padding: 0.8rem;
+    margin: 1rem;
+    border: 0;
+    border-radius: 0.3rem;
+}
+

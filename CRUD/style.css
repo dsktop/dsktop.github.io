@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #cccccc;
+}
+
+#barra-lateral-container{
+    position: relative;
+    background-color: #183153;
+    height: 100vh;
+    width: 22rem;
+    z-index: 1;
+    padding-right: 0px;
+}
+
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background: white;
+    z-index: 1;
+    
+}
+
+#side-bar-content{
+    position: fixed;
+    margin-top: 1.3rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+    width: 19.6rem;
+    height: 75%;
+}
+
+.pestañas a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-right: 0.5rem;
+    padding-left:  0.5rem;
+}
+
+.añadirproducto-navbar{
+    position: relative;
+    height: 1.8rem;
+    width: 12rem;
+    background: #ff2163;
+    border-radius: 50px;
+    margin-left: 15rem;
+}
+
+#añadirproducto-btn{
+    margin-top: 0.25rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    margin-left: 1.5rem;
+    
+}
+
+.notificacion img{
+    width: 3rem;
+}
+
+.perfil a{
+    margin-top: 0.5rem;
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+}
+
+.perfil img{
+    position: fixed;
+    width: 3.2rem;
+    margin-left:4rem ;
+}
+
+#search{
+    width: 97%;
+    height: 2.6rem;
+    border-radius: 10px;
+    background: white;
+}
+
+#search img{
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: -1.1rem;
+    width: 2.2rem;
+    border-radius:50%;
+    
+}
+
+#btn-search{
+    position: absolute;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius:50%;
+    border: none;
+}
+
+#btn-search:hover{
+    cursor: pointer;
+}
+
+#buscar-inventario{
+    width: 80%;
+    height: 2.4rem;
+    margin-left: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: black;
+    outline: none;
+}
+
+.desplegables{
+    margin-top: 2rem;
+    color: white;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: normal;
+}
+
+#select{
+    margin-top: 0.7rem;
+    width: 98%;
+    height: 2.5rem;
+    border-radius: 10px;
+    background: #183153;
+    color: #cccccc;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    border: #cccccc solid 3px;
+}
+
+#select option{
+    background: white;
+    color: black;
+}
+
+#asendente-desendente{
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#asendente{
+    margin-bottom: 1rem;
+}
+
+#botones-sidebar{
+    margin-top: 2rem;
+}
+
+#clean{
+    background-color: #183153;
+    color: white;
+    border: white solid 3px;
+    border-radius: 7px;
+    margin-right: 2rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#apply{
+    background-color: #ffffff;
+    color: #183153;
+    border: none;
+    border-radius: 7px;
+    
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#clean,#apply{
+    width: 44.3%;
+    height: 2.5rem;
+}
+
+#body-content {
+    z-index: 0;
+    position: absolute;
+    width: 94rem;
+    height: 85vh;
+    background: #ffffff;
+    margin-left: 24rem;
+    margin-top: 6rem;
+}
+
+.btns-header{
+    height: 2.4rem;
+    border-radius: 50px;
+    margin-right: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Plus Jakarta Sans', sans-serif;
+}
+
+#btn-modificar{
+    background: #ffffff;
+    border: #cccccc solid 2px;
+}
+
+#btn-generar{
+    background: #ff2163;
+    color: #ffffff;
+    border: none;
+}
+
+#body-header-static{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    padding-bottom: 1rem;
+    padding-right: 0rem;
+}
+
+#body-header-static input{
+    margin-right: 6rem;
+    width: 20px;
+    height: 20px;
+}
+#body-header-static p{
+    margin-right: 4rem;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#vista-previa{
+    border: #cccccc solid 3px;
+    width:20rem;
+    height: 30rem;
+    margin-left: 30rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #7c7c7c;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -1rem;
+}
+
+#btn-under-vista-previa{
+    margin-top: 2rem;
+    height: 2.4rem;
+    border-radius: 50px;
+    margin-left: 0rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    border: none;
+}
+
+#btn-subir-aña{
+    margin-top: -1rem;
+    height: 3rem;
+    border-radius: 50px;
+    margin-left: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    border: none;
+    background: #ff2163;
+    color: #ffffff;
+}
+
+#input-añadir-libro{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5rem;
+}
+
+#input-añadir-libro input {
+    font-family:'Plus Jakarta Sans', sans-serif;
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+    height: 2rem;
+    width: 27rem;
+    border: #7c7c7c solid 2px;
+    font-size: 15px;
+}
+
+#selectM{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+    height: 2.5rem;
+    width: 27rem;
+    border: #7c7c7c solid 2px;
+    font-size: 15px;
+}
+
+#btns-under-input-aña button{
+    width: 12.5rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#btns-under-input-aña a{
+    width: 12.5rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#cancelar{
+    color: #686767;
+    margin-right: 2rem;
+    background: #ffffff;
+    border: #7c7c7c solid 2px;
+    text-decoration: none;
+}
+
+#aplicar{
+    border: none;
+    background: #04db7e;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav{
+    margin-left: -6rem ;
+}
+
+.nav > li {
+    float:center;
+}
+
+.nav li a {
+    margin-left: -7.7rem;
+    margin-top: 3.5rem;
+    background-color:#ffffff;
+    color:#000000;
+    text-decoration:none;
+    padding: 1rem;
+    width: 10rem;
+    display:block;
+    text-align: center;
+}
+
+.nav li a:hover {
+    background-color:#ff2163;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    
+    top:0px;
+}
+
+#caratula{
+    width: 20rem; 
+    
+    margin-top: 2rem;
+}
